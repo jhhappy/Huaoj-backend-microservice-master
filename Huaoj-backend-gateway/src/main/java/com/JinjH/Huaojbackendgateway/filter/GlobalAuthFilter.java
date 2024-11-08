@@ -33,6 +33,7 @@ public class GlobalAuthFilter implements GlobalFilter, Ordered {
             return response.writeWith(Mono.just(dataBuffer));
         }
         // todo 统一权限校验，通过 JWT 获取登录用户信息
+        //test
         return chain.filter(exchange);
     }
 
